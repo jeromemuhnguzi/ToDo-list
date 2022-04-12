@@ -1,26 +1,43 @@
 .app {
-  background: #209cee;
   height: 100vh;
-  padding: 300px;
-}
-.R{
-  align-items: right;
-}
-.todo-list {
-  background: #e8e8e8;
-  border-radius: 4px;
-  max-width: 400px;
-  padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.todo {
-  align-items: center;
-  background: #fff;
-  border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+.todo-form {
   display: flex;
-  font-size: 30px;
-  justify-content: space-between;
-  margin-bottom: 6px;
-  padding: 3px 10px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.todo-form input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.todo-form button[type=submit] {
+  height: 43px;
+  margin-left: 3px;
+  background: green;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+svg {
+  cursor: pointer;
+}
+
+.todo-list-container {
+  display: flex;
+  align-items: center;
 }
